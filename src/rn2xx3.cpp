@@ -734,7 +734,7 @@ bool rn2xx3::setFrequencyPlan(FREQ_PLAN fp)
           String command = F("mac set ch status ");
           command += channel;
 
-          if(channel>=8 && channel<16)
+          if(channel>=48 && channel<56)
           {
             sendRawCommand(command+F(" on"));
           }
